@@ -1,4 +1,4 @@
-export class Article {
+export class Classroom {
   idClassroom!: number;
   numero!: number;
   etage!: number;
