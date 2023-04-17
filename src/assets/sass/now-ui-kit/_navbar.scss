@@ -131,10 +131,11 @@
     }
 
     &.navbar-transparent{
-        background-color: $transparent-bg !important;
+        //background-color: $transparent-bg !important;
+        background-color: red;
         box-shadow: none;
         color: $white-color;
-        padding-top: 20px;
+        padding-top: 10px;
     }
 
     &.bg-white:not(.navbar-transparent){
