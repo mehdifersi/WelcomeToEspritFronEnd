@@ -11,6 +11,9 @@ import {HttpClientModule} from "@angular/common/http";
 import {FormsModule} from "@angular/forms";
 import { FooterComponent } from './frontoffice/footer/footer.component';
 import {NgxPageScrollModule} from "ngx-page-scroll";
+import { SidebarComponent } from './backoffice/sidebar/sidebar.component';
+import { HomebackComponent } from './backoffice/homeback/homeback.component';
+import { NavbarbackComponent } from './backoffice/navbarback/navbarback.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import {NgxPageScrollModule} from "ngx-page-scroll";
     LoginComponent,
     SignUpComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    SidebarComponent,
+    HomebackComponent,
+    NavbarbackComponent
   ],
   imports: [
     BrowserModule,
