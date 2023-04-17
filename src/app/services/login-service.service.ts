@@ -97,9 +97,9 @@ export class LoginServiceService {
   }*/
 
 
-  public getCurrentUser(loginData:any){
+  public getCurrentUser(email:any){
 
-    return this.http.get(`${baseUrl}/api/v1/auth/current-user`,loginData);
+    return this.http.get(`${baseUrl}/api/v1/auth/current-userr`,email);
 
   }
 

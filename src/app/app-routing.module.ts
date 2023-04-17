@@ -8,7 +8,7 @@ import {NavbarComponent} from "./frontoffice/nav-bar/nav-bar.component";
 const routes: Routes = [
   {path:'',redirectTo:'home',pathMatch:"full"},
   {path:'home',component:HomeComponent},
-  {path:'login',component:LoginComponent},
+  {path:'login',component:LoginComponent,},
   {path:'singUp',component:SignUpComponent},
   {path:'nav',component:NavbarComponent},
 ];
