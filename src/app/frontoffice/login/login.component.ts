@@ -72,6 +72,7 @@ export class LoginComponent implements OnInit {
 
         this.login.loginUser(data.token);
         this.login.getCurrentUser(this.loginData.email).subscribe(
+
           (user:any)=>{
             this.login.setUser(user);
             // console.log(user);
