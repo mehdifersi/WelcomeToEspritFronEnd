@@ -46,7 +46,6 @@
             font-size: $font-size-mini;
             padding: $padding-base-vertical $padding-base-horizontal;
             line-height: $line-height-nav-link;
-
             i.fab + p,
             i.now-ui-icons + p{
                 margin-left: 3px;
@@ -54,7 +53,7 @@
 
             i.fab,
             i.now-ui-icons{
-                font-size: 18px;
+                font-size: 2px;
                 position: relative;
                 top: 3px;
                 text-align: center;
@@ -78,7 +77,9 @@
                 color: $white-color;
             }
         }
-
+      .navbar-nav .nav-link {
+        margin-left: auto
+      }
         .nav-item.active .nav-link:not(.btn),
         .nav-item .nav-link:not(.btn):focus,
         .nav-item .nav-link:not(.btn):hover,
@@ -99,7 +100,8 @@
 
     .navbar-brand{
         text-transform: uppercase;
-        font-size: $font-size-small;
+        font-size: $font-size-h1;
+        font-family: Montserrat;
         padding-top: $padding-base-vertical;
         padding-bottom: $padding-base-vertical;
         line-height: $line-height-nav-link;
@@ -131,10 +133,11 @@
     }
 
     &.navbar-transparent{
-        background-color: $transparent-bg !important;
+      //background-color: $transparent-bg !important;
+      background-color: red !important;
         box-shadow: none;
         color: $white-color;
-        padding-top: 20px;
+        padding-top: 10px;
     }
 
     &.bg-white:not(.navbar-transparent){

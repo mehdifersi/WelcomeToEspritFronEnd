@@ -1,0 +1,12 @@
+.navbar-and-sidebar {
+  display: -webkit-inline-flex;
+  flex-direction: row-reverse;
+}
+
+.app-navbarback {
+  flex: 0 0 auto;
+}
+
+.app-sidebar {
+  flex: 1 0 auto;
+}

@@ -1,4 +1,4 @@
-export class Article {
+export class CondidatOffre {
   idOffre!: number;
   FirstName!: string;
   LastName!: string;
