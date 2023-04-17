@@ -9,6 +9,8 @@ import { NavbarComponent } from './frontoffice/nav-bar/nav-bar.component';
 import {AppRoutingModule} from "./app-routing.module";
 import {HttpClientModule} from "@angular/common/http";
 import {FormsModule} from "@angular/forms";
+import { FooterComponent } from './frontoffice/footer/footer.component';
+import {NgxPageScrollModule} from "ngx-page-scroll";
 
 @NgModule({
   declarations: [
@@ -16,10 +18,12 @@ import {FormsModule} from "@angular/forms";
     HomeComponent,
     LoginComponent,
     SignUpComponent,
-    NavbarComponent
+    NavbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
+    NgxPageScrollModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule

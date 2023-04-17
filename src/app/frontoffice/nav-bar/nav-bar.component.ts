@@ -1,5 +1,6 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
 import { Location, LocationStrategy, PathLocationStrategy } from '@angular/common';
+import { PageScrollService } from 'ngx-page-scroll-core';
 
 @Component({
   selector: 'app-nav-bar',
@@ -10,7 +11,7 @@ export class NavbarComponent implements OnInit {
   private toggleButton: any;
   private sidebarVisible: boolean;
 
-  constructor(public location: Location, private element : ElementRef) {
+  constructor(public location: Location, private element : ElementRef,private pageScrollService: PageScrollService) {
     this.sidebarVisible = false;
   }
 
@@ -53,5 +54,12 @@ export class NavbarComponent implements OnInit {
     else {
       return false;
     }
+  }
+  scrollToElement() {
+    this.pageScrollService.scroll({
+      document: document,
+      scrollTarget: '#element-id',
+      duration: 100000, // adjust as needed
+    });
   }
 }
