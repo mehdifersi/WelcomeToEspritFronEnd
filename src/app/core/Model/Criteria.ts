@@ -1,4 +1,4 @@
-export class Article {
+export class Criteria {
   idCriteria!: number;
   Question!: string;
   Value!: string;
