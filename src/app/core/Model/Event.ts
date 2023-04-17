@@ -1,4 +1,4 @@
-export class Article {
+export class Event {
   idEvent!: number;
   NomDlocationepart!: string;
 }
