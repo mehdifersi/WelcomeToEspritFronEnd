@@ -1,7 +1,9 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
+
 import { Interview } from '../core/Model/Interview';
 import baseUrl from './helpers.service';
+
 
 @Injectable({
   providedIn: 'root'
@@ -9,6 +11,7 @@ import baseUrl from './helpers.service';
 export class InterviewService {
 
   constructor(private http:HttpClient) { }
+
   getInterviews() {
     return this.http.get<Interview[]>(`${baseUrl}/interview/getAll`);
   }
@@ -28,5 +31,6 @@ export class InterviewService {
   getInterview(id: number) {
     return this.http.get<Interview>(`${baseUrl}/interview/${id}`);
   }
+
 
 }

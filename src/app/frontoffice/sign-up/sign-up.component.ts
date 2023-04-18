@@ -13,6 +13,7 @@ export class SignUpComponent implements OnInit{
   data : Date = new Date();
   focus:any;
   focus1:any;
+
   SignUpData = {
     firstname:'',
     lastname:'',
@@ -24,6 +25,7 @@ export class SignUpComponent implements OnInit{
     niveauActuel :'',
   };
   constructor(private router:Router,private http:HttpClient,private signUp:RegisterService) { }
+
 
   ngOnInit() {
     var body = document.getElementsByTagName('body')[0];
@@ -39,6 +41,7 @@ export class SignUpComponent implements OnInit{
     var navbar = document.getElementsByTagName('nav')[0];
     navbar.classList.remove('navbar-transparent');
   }
+
 
   formSubmit(){
     if(this.SignUpData.email.trim() == '' || this.SignUpData.email == null){
@@ -78,5 +81,6 @@ export class SignUpComponent implements OnInit{
         console.log("succes");
         console.log(data);
         Swal.fire('Registred !!', 'verifier ton email', 'success');});
+
   }
 }
