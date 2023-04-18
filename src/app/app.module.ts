@@ -17,6 +17,8 @@ import { NavbarbackComponent } from './backoffice/navbarback/navbarback.componen
 import { TablesbackComponent } from './backoffice/tablesback/tablesback.component';
 import { AddOffreComponent } from './backoffice/add-offre/add-offre.component';
 
+import { UploadUsersComponent } from './backoffice/upload-users/upload-users.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +31,8 @@ import { AddOffreComponent } from './backoffice/add-offre/add-offre.component';
     HomebackComponent,
     NavbarbackComponent,
     TablesbackComponent,
-    AddOffreComponent
+    AddOffreComponent,
+    UploadUsersComponent
   ],
   imports: [
     BrowserModule,
