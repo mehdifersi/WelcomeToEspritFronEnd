@@ -8,6 +8,7 @@ import {SidebarComponent} from "./backoffice/sidebar/sidebar.component";
 import {NavbarbackComponent} from"./backoffice/navbarback/navbarback.component"
 import { HomebackComponent } from './backoffice/homeback/homeback.component';
 import { TablesbackComponent } from './backoffice/tablesback/tablesback.component';
+import { AddOffreComponent } from './backoffice/add-offre/add-offre.component';
 const routes: Routes = [
   {path:'',redirectTo:'home',pathMatch:"full"},
   {path:'home',component:HomeComponent},
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path:'up',component: NavbarbackComponent},
   {path:'homeback',component:HomebackComponent},
   {path:'tablous',component:TablesbackComponent},
+  {path:'offre',component:AddOffreComponent}
 ];
 
 @NgModule({

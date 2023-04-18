@@ -1,9 +1,9 @@
 import {Type} from "./Type";
 
 export class Offre {
-  idOffre!: number;
-  Title!: string;
+  idOffre: number=0;
+  title!: string;
   type!: Type;
-  Description!: string;
+  description!: string;
   capacity!: number;
 }

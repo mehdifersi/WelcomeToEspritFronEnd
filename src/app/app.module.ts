@@ -15,6 +15,7 @@ import { SidebarComponent } from './backoffice/sidebar/sidebar.component';
 import { HomebackComponent } from './backoffice/homeback/homeback.component';
 import { NavbarbackComponent } from './backoffice/navbarback/navbarback.component';
 import { TablesbackComponent } from './backoffice/tablesback/tablesback.component';
+import { AddOffreComponent } from './backoffice/add-offre/add-offre.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { TablesbackComponent } from './backoffice/tablesback/tablesback.componen
     SidebarComponent,
     HomebackComponent,
     NavbarbackComponent,
-    TablesbackComponent
+    TablesbackComponent,
+    AddOffreComponent
   ],
   imports: [
     BrowserModule,
