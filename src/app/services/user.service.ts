@@ -25,4 +25,8 @@ export class UserService {
   getUser(id:number){
     return  this.http.get<User>(`${baseUrl}/user/`+id);
   }
+  statistique(role:any,cretetria:any){
+    return  this.http.get<User>(`${baseUrl}/user/statistique/`+role+`/`+cretetria);
+  }
+
 }
