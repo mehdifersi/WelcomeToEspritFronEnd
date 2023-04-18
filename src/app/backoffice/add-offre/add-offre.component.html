@@ -1,0 +1,50 @@
+<link href="add-offre.component.css" rel="stylesheet">
+<body>
+<img src="assets/img/img.png" alt="">
+{{offer|json}}
+<div class="form-body">
+    <div class="row">
+        <div class="form-holder">
+            <div class="form-content">
+                <div class="form-items">
+                    <h3>Add offer</h3>
+                    <p>Fill in the data below.</p>
+                    <form class="requires-validation" novalidate>
+
+                        <div class="col-md-12">
+                           <input  [(ngModel)]="offer.title" class="form-control" type="text" name="title" placeholder="Title" required>
+                           <div class="valid-feedback">Title is valid!</div>
+                           <div class="invalid-feedback">Title field cannot be blank!</div>
+                        </div>
+
+                       <div class="col-md-12">
+                        <select class="form-select mt-3" [(ngModel)]="offer.type" name="type" required>
+                            <option selected disabled value="">Type</option>
+                            <option value="TEACHING">Teaching</option>
+                            <option value="ADMINISTRATIF_STAFF">Administratif Staff</option>
+                          </select>
+                            <div class="valid-feedback">You selected a type!</div>
+                            <div class="invalid-feedback">Please select a type!</div>
+                       </div>
+
+                       <div class="col-md-12">
+                          <input [(ngModel)]="offer.description" class="form-control" type="text" name="desc" placeholder="Description" required>
+                           <div class="valid-feedback">Description field is valid!</div>
+                           <div class="invalid-feedback">Description field cannot be blank!</div>
+                       </div>
+
+                       <div class="col-md-12">
+                            <input [(ngModel)]="offer.capacity" class="form-control" type="text" name="capa" placeholder="Capacity" required>
+                            <div class="valid-feedback">capacity is valid!</div>
+                            <div class="invalid-feedback">capacity field cannot be blank!</div>
+                        </div>
+                        <div class="form-button mt-3">
+                            <button id="submit" type="submit" class="btn btn-primary">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>

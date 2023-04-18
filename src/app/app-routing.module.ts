@@ -8,6 +8,8 @@ import {SidebarComponent} from "./backoffice/sidebar/sidebar.component";
 import {NavbarbackComponent} from"./backoffice/navbarback/navbarback.component"
 import { HomebackComponent } from './backoffice/homeback/homeback.component';
 import { TablesbackComponent } from './backoffice/tablesback/tablesback.component';
+import { AddOffreComponent } from './backoffice/add-offre/add-offre.component';
+=======
 import {UploadUsersComponent} from "./backoffice/upload-users/upload-users.component";
 const routes: Routes = [
   {path:'',redirectTo:'home',pathMatch:"full"},
@@ -24,6 +26,8 @@ const routes: Routes = [
       {path:'tablous',component:TablesbackComponent},
     ]},
   {path:'homeback',component:HomebackComponent},
+
+  {path:'offre',component:AddOffreComponent}
 
 ];
 
