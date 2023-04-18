@@ -88,13 +88,13 @@ export class LoginServiceService {
   }
 
 
- /* public getUserRole(){
+ public getUserRole(){
 
     let user = this.getUser();
     return user.getRole();
 
 
-  }*/
+  }
 
 
   public getCurrentUser(email:any){
