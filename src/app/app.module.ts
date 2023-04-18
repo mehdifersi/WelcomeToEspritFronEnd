@@ -14,6 +14,8 @@ import {NgxPageScrollModule} from "ngx-page-scroll";
 import { SidebarComponent } from './backoffice/sidebar/sidebar.component';
 import { HomebackComponent } from './backoffice/homeback/homeback.component';
 import { NavbarbackComponent } from './backoffice/navbarback/navbarback.component';
+import { StudentDashboardComponent } from './backoffice/student-dashboard/student-dashboard.component';
+import { InterviewsComponent } from './backoffice/interviews/interviews.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { NavbarbackComponent } from './backoffice/navbarback/navbarback.componen
     FooterComponent,
     SidebarComponent,
     HomebackComponent,
-    NavbarbackComponent
+    NavbarbackComponent,
+    StudentDashboardComponent,
+    InterviewsComponent
   ],
   imports: [
     BrowserModule,

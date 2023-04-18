@@ -9,6 +9,7 @@ export class SignUpComponent implements OnInit{
   data : Date = new Date();
   focus:any;
   focus1:any;
+  SignUpData: any;
 
   constructor() { }
 
@@ -25,5 +26,9 @@ export class SignUpComponent implements OnInit{
 
     var navbar = document.getElementsByTagName('nav')[0];
     navbar.classList.remove('navbar-transparent');
+  }
+
+  formSubmit() {
+
   }
 }

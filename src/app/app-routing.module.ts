@@ -7,6 +7,7 @@ import {NavbarComponent} from "./frontoffice/nav-bar/nav-bar.component";
 import {SidebarComponent} from "./backoffice/sidebar/sidebar.component";
 import {NavbarbackComponent} from"./backoffice/navbarback/navbarback.component"
 import { HomebackComponent } from './backoffice/homeback/homeback.component';
+import {InterviewsComponent} from "./backoffice/interviews/interviews.component";
 const routes: Routes = [
   {path:'',redirectTo:'home',pathMatch:"full"},
   {path:'home',component:HomeComponent},
@@ -16,6 +17,7 @@ const routes: Routes = [
   {path:'side',component: SidebarComponent},
   {path:'up',component: NavbarbackComponent},
   {path:'homeback',component:HomebackComponent},
+  {path:'interview',component:InterviewsComponent}
 ];
 
 @NgModule({
