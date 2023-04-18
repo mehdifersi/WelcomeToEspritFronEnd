@@ -44,7 +44,7 @@ export class AddOffreComponent {
               () => {
                 console.log('Offer added successfully');
                 // Reset the form
-                this.router.navigate(['/homeback'])
+                this.router.navigate(['/home'])
               },
               (              error: any) => {
                 console.error('Failed to add offer', error);
