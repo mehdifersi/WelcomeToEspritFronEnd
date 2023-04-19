@@ -14,14 +14,13 @@ import {NgxPageScrollModule} from "ngx-page-scroll";
 import { SidebarComponent } from './backoffice/sidebar/sidebar.component';
 import { HomebackComponent } from './backoffice/homeback/homeback.component';
 import { NavbarbackComponent } from './backoffice/navbarback/navbarback.component';
-
 import { TablesbackComponent } from './backoffice/tablesback/tablesback.component';
 import { AddOffreComponent } from './backoffice/add-offre/add-offre.component';
-
 import { UploadUsersComponent } from './backoffice/upload-users/upload-users.component';
-
 import { StudentDashboardComponent } from './backoffice/student-dashboard/student-dashboard.component';
 import { InterviewsComponent } from './backoffice/interviews/interviews.component';
+import { AdminDashboardComponent } from './backoffice/admin-dashboard/admin-dashboard.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 @NgModule({
@@ -35,13 +34,13 @@ import { InterviewsComponent } from './backoffice/interviews/interviews.componen
     SidebarComponent,
     HomebackComponent,
     NavbarbackComponent,
-
     TablesbackComponent,
     AddOffreComponent,
-    UploadUsersComponent
-
+    UploadUsersComponent,
     StudentDashboardComponent,
-    InterviewsComponent
+    InterviewsComponent,
+    AdminDashboardComponent,
+    NotFoundComponent
 
   ],
   imports: [
