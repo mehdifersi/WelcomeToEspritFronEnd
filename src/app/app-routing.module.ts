@@ -27,9 +27,7 @@ const routes: Routes = [
       {path:'tablous',component:TablesbackComponent},
     ]},
   {path:'homeback',component:HomebackComponent},
-
-  {path:'offre',component:AddOffreComponent}
-
+  {path:'offre',component:AddOffreComponent},
   {path:'interview',component:InterviewsComponent}
 ];
 

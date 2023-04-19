@@ -15,6 +15,9 @@ export class InterviewService {
   getInterviews() {
     return this.http.get<Interview[]>(`${baseUrl}/interview/getAll`);
   }
+  getAllInterviewsWithEvaluatorAndStudentName() {
+    return this.http.get<Interview[]>(`${baseUrl}/interview/getAllInterviewsWithEvaluatorAndStudentName`);
+  }
 
   postInterview(interview: Interview) {
     return this.http.post<Interview>(`${baseUrl}/interview/add`, interview);

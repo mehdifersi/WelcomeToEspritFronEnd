@@ -16,7 +16,7 @@ export class StudentDashboardComponent implements OnInit{
   }
 
   ngOnInit(): void {
-    this.interviewService.GetInterviews().subscribe({
+    this.interviewService.getInterviews().subscribe({
       next: (data) => this.interviews = data,
     })
 

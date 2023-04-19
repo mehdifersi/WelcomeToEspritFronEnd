@@ -1,22 +1,36 @@
-<p>interviews works!</p>
+<div class="container-fluid">
 
-<table class="table">
-  <thead>
-  <tr>
-    <th scope="col">Id interview</th>
-    <th scope="col">Date interview</th>
-    <th scope="col">Heure interview </th>
-    <th scope="col">Id Evalutor</th>
-    <th scope="col">Id classroom</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <th scope="row">1</th>
-    <td>Mark</td>
-    <td>Otto</td>
-    <td>@mdo</td>
-  </tr>
+  <h1 class="h3 mb-2 text-gray-800">All interviews </h1>
 
-  </tbody>
-</table>
+  <div class="card shadow mb-4">
+    <div class="card-body">
+      <div class="table-responsive">
+        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+          <thead>
+          <tr>
+            <th>Interview Id</th>
+            <th>Evaluator First Name</th>
+            <th>Evaluator Last Name</th>
+            <th>Student First Name</th>
+            <th>Student Last Name</th>
+            <th>Interview Date</th>
+            <th>Interview Heure</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor=" let interview of interviews">
+            <td>{{interview.idInterview}}</td>
+            <td>{{interview.evaluator.firstname}}</td>
+            <td>{{interview.evaluator.lastname}}</td>
+            <td>{{interview.student.firstname}}</td>
+            <td>{{interview.student.lastname}}</td>
+            <td>{{interview.dateInterview | date}}</td>
+            <td>{{interview.heureInterview}}</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+</div>
