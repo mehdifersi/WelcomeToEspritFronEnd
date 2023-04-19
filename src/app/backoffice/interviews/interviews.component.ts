@@ -18,4 +18,10 @@ export class InterviewsComponent implements OnInit{
     })
   }
 
+  deleteInterview(id : number) {
+    this.interviewService.deleteInterview(id).subscribe({
+      next:()=>this.ngOnInit()
+    })
+
+  }
 }

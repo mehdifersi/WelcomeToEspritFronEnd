@@ -15,6 +15,7 @@
             <th>Student Last Name</th>
             <th>Interview Date</th>
             <th>Interview Heure</th>
+            <th>Changes</th>
           </tr>
           </thead>
           <tbody>
@@ -26,6 +27,9 @@
             <td>{{interview.student.lastname}}</td>
             <td>{{interview.dateInterview | date}}</td>
             <td>{{interview.heureInterview}}</td>
+            <td>
+            <button class="btn btn-primary" (click)="deleteInterview(interview.idInterview)">Delete</button>
+            </td>
           </tr>
           </tbody>
         </table>
