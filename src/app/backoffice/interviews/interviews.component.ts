@@ -9,7 +9,7 @@ import {Interview} from "../../core/Model/Interview";
 })
 export class InterviewsComponent implements OnInit{
 
-  interviews! : Interview[];
+  interviews : any[]=[];
   constructor(private interviewService:InterviewService) {
   }
   ngOnInit(): void {

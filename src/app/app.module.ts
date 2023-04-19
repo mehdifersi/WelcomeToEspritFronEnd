@@ -19,6 +19,8 @@ import { AddOffreComponent } from './backoffice/add-offre/add-offre.component';
 import { UploadUsersComponent } from './backoffice/upload-users/upload-users.component';
 import { StudentDashboardComponent } from './backoffice/student-dashboard/student-dashboard.component';
 import { InterviewsComponent } from './backoffice/interviews/interviews.component';
+import { AdminDashboardComponent } from './backoffice/admin-dashboard/admin-dashboard.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 @NgModule({
@@ -36,7 +38,9 @@ import { InterviewsComponent } from './backoffice/interviews/interviews.componen
     AddOffreComponent,
     UploadUsersComponent,
     StudentDashboardComponent,
-    InterviewsComponent
+    InterviewsComponent,
+    AdminDashboardComponent,
+    NotFoundComponent
 
   ],
   imports: [

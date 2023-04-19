@@ -21,12 +21,12 @@
           <tbody>
           <tr *ngFor=" let interview of interviews">
             <td>{{interview.idInterview}}</td>
-            <td>{{interview.evaluator.firstname}}</td>
-            <td>{{interview.evaluator.lastname}}</td>
-            <td>{{interview.student.firstname}}</td>
-            <td>{{interview.student.lastname}}</td>
-            <td>{{interview.dateInterview | date}}</td>
-            <td>{{interview.heureInterview}}</td>
+            <td>{{interview.evaluatorName}}</td>
+            <td>{{interview.evaluatorLastName}}</td>
+            <td>{{interview.studentName}}</td>
+            <td>{{interview.studentLastName}}</td>
+            <td>{{interview.interviewDate | date}}</td>
+            <td>{{interview.interviewHeure}}</td>
             <td>
             <button class="btn btn-primary" (click)="deleteInterview(interview.idInterview)">Delete</button>
             </td>
