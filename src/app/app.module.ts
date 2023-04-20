@@ -21,6 +21,7 @@ import { StudentDashboardComponent } from './backoffice/student-dashboard/studen
 import { InterviewsComponent } from './backoffice/interviews/interviews.component';
 import { AdminDashboardComponent } from './backoffice/admin-dashboard/admin-dashboard.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { UserProfileComponent } from './backoffice/user-profile/user-profile.component';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     StudentDashboardComponent,
     InterviewsComponent,
     AdminDashboardComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    UserProfileComponent
 
   ],
   imports: [
