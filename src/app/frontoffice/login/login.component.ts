@@ -69,12 +69,12 @@ export class LoginComponent implements OnInit {
       (data:any)=>{
         console.log("succes");
         console.log(data);
-
+        localStorage.setItem('User : ',JSON.stringify(this.loginData))
         this.login.loginUser(data.token);
         this.login.getCurrentUser(this.loginData.email).subscribe(
           (user:any)=>{
-            this.login.setUser(user);
-            // console.log(user);
+            // this.login.setUser(user);
+            console.log(user);
 
             /*if(this.login.getUserRole()=='STUDENT'){
 
