@@ -1,4 +1,4 @@
-export class Article {
+export class Bloc {
   idBloc!: number;
   nomBloc!: string;
 }

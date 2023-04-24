@@ -1,0 +1,69 @@
+
+    <!-- Begin Page Content -->
+    <div class="container-fluid">
+
+      <!-- Page Heading -->
+      <h1 class="h3 mb-2 text-gray-800">Table of Users</h1>
+      <p> this tables contains the Users DATA </p>
+
+      <!-- DataTales Example -->
+      <div class="card shadow mb-4">
+        <div class="card-body">
+          <div class="table-responsive">
+            <table *ngFor="let user of listUsers" class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+              <thead>
+              <tr>
+                <th>firstname</th>
+                <th>lastname</th>
+                <th>email</th>
+                <th>sexe</th>
+                <th>nationality</th>
+                <th>typeCours</th>
+                <th>password</th>
+                <th>cin</th>
+                <th>locked</th>
+                <th>enabled</th>
+                <th>niveau</th>
+                <th>numTel</th>
+              </tr>
+              </thead>
+              <tfoot>
+              <tr>
+                <th>firstname</th>
+                <th>lastname</th>
+                <th>email</th>
+                <th>sexe</th>
+                <th>nationality</th>
+                <th>typeCours</th>
+                <th>password</th>
+                <th>cin</th>
+                <th>locked</th>
+                <th>enabled</th>
+                <th>niveau</th>
+                <th>numTel</th>
+              </tr>
+              </tfoot>
+              <tbody>
+              <tr>
+                <td>{{user.firstname}}</td>
+                <td>{{user.lastname}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.sexe}}</td>
+                <td>{{user.nationality}}</td>
+                <td>{{user.typeCours}}</td>
+                <td>{{user.password}}</td>
+                <td>{{user.cin}}</td>
+                <td>{{user.locked}}</td>
+                <td>{{user.enabled}}</td>
+                <td>{{user.niveauSuivant}}</td>
+                <td>{{user.numTel}}</td>
+              </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
