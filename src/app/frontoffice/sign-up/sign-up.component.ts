@@ -13,6 +13,7 @@ export class SignUpComponent implements OnInit{
   data : Date = new Date();
   focus:any;
   focus1:any;
+  SignUpData: any
 
   SignUpData = {
     firstname:'',
@@ -82,5 +83,5 @@ export class SignUpComponent implements OnInit{
         console.log(data);
         Swal.fire('Registred !!', 'verifier ton email', 'success');});
 
-  }
+
 }
