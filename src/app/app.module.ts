@@ -8,7 +8,7 @@ import { SignUpComponent } from './frontoffice/sign-up/sign-up.component';
 import { NavbarComponent } from './frontoffice/nav-bar/nav-bar.component';
 import {AppRoutingModule} from "./app-routing.module";
 import {HttpClientModule} from "@angular/common/http";
-import {FormsModule} from "@angular/forms";
+import {FormControl, FormsModule} from "@angular/forms";
 import { FooterComponent } from './frontoffice/footer/footer.component';
 import {NgxPageScrollModule} from "ngx-page-scroll";
 import { SidebarComponent } from './backoffice/sidebar/sidebar.component';
@@ -21,6 +21,7 @@ import { StudentDashboardComponent } from './backoffice/student-dashboard/studen
 import { InterviewsComponent } from './backoffice/interviews/interviews.component';
 import { AdminDashboardComponent } from './backoffice/admin-dashboard/admin-dashboard.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { EventComponent } from './frontoffice/event/event.component';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     StudentDashboardComponent,
     InterviewsComponent,
     AdminDashboardComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    EventComponent
 
   ],
   imports: [
@@ -49,6 +51,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
     AppRoutingModule,
     FormsModule,
     HttpClientModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

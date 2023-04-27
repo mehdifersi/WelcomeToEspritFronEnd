@@ -13,6 +13,7 @@ import {UploadUsersComponent} from "./backoffice/upload-users/upload-users.compo
 import {InterviewsComponent} from "./backoffice/interviews/interviews.component";
 import {AdminDashboardComponent} from "./backoffice/admin-dashboard/admin-dashboard.component";
 import {NotFoundComponent} from "./not-found/not-found.component";
+import { EventComponent } from './frontoffice/event/event.component';
 
 const routes: Routes = [
   {path:'',redirectTo:'home',pathMatch:"full"},
@@ -32,6 +33,7 @@ const routes: Routes = [
   {path:'offre',component:AddOffreComponent},
   {path:'interview',component:InterviewsComponent},
   {path:'adminDashboard',component:AdminDashboardComponent},
+  {path:'event',component:EventComponent},
 
 
 
